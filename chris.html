@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<img src="brown clibs.avif" width="200">
+    <title>chris brown clibs</title>
+
+</head>
+<body bgcolor="red">
+<h1 align ="center">chris brown clibs</h1>
+<h2>Chris Brown - Loyal (Official Video) ft. Lil Wayne, Tyga</h2>
+<br>
+c
+<video controls width="300" poster="loyal.jpg" 
+<source  src="loyal.mp4" type="video/mp4">
+<source  src="loyal.web" type="video/web">
+<source src="loyal.ogg" type="video/ogg>"
+<hr>
+<h2>Kid Ink - Show Me (Explicit) ft. Chris Brown </h2>
+<br>
+<video   controls width="300"  poster="show.jpg"   
+<source  src="show.mp4" type="video/mp4">
+<source  src="show.web" type="video/web">
+<source src="show.ogg" type="video/ogg>"
+<hr>
+<h2>Chris Brown - Little More (Royalty) [Explicit Ver</h2>
+<br>
+<video controls width="300" poster="little.jpg" 
+<source  src="little.mp4" type="video/mp4">
+<source  src="little.web" type="video/web">
+<source src="little.ogg" type="video/ogg>"
+<hr><hr>
+<h2>Chris Brown - Don't Wake Me Up (Official Video)</h2>
+<br>
+<video controls width="300" poster="dont wake me up.jpg" 
+<source  src="dont wake me up.mp4" type="video/mp4">
+<source  src="dont wake me up.web" type="video/web">
+<source src="dont wake me up.ogg" type="video/ogg>"
+<hr>
+</video>
+<br>
+<br>
+<p>طور بواسطه  :<strong>رماح حامد</strong>
+<br>
+<br>
+<p><big>اهداء الي صديقي محمد توباك</big></p>
+
+
+<script>
+  // 1. جلب جميع عناصر الفيديو الموجودة في الصفحة
+  const allVideos = document.querySelectorAll('video');
+
+  // 2. إضافة مستمع حدث (Event Listener) لكل فيديو عند بدء تشغيله
+  allVideos.forEach(video => {
+    video.addEventListener('play', () => {
+      
+      // 3. المرور على بقية الفيديوهات وإيقافها إذا كانت تعمل
+      allVideos.forEach(otherVideo => {
+        if (otherVideo !== video) {
+          otherVideo.pause();
+        }
+      });
+
+    });
+  });
+</script>
+</body>
+</html>
